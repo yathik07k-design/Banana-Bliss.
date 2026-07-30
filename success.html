@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#FFD54F">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Order Success</title>
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+.success{
+text-align:center;
+padding:100px 20px;
+}
+
+.success h1{
+font-size:45px;
+color:green;
+}
+
+.success p{
+font-size:22px;
+margin:20px 0;
+}
+
+.success a{
+
+background:#4CAF50;
+color:white;
+padding:15px 30px;
+text-decoration:none;
+border-radius:8px;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="success">
+
+<h1>✅ Order Placed Successfully!</h1>
+
+<p> 
+Thank you for ordering from Banana Bliss.
+</p>
+
+<p>
+We will contact you soon on WhatsApp.
+</p>
+
+<a href="index.html">
+🍌 Back to Home
+</a>
+
+<br><br>
+
+<button id="downloadInvoice">
+    📄 Download Invoice
+</button>
+
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/jspdf-autotable@3.8.2/dist/jspdf.plugin.autotable.min.js"></script>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

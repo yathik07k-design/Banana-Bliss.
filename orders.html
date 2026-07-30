@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banana Bliss - Orders</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="admin-navbar">
+    <div class="admin-logo">
+        🍌 Banana Bliss
+        <span>Admin Panel</span>
+    </div>
+
+    <ul>
+        <li><a href="admin.html">Dashboard</a></li>
+        <li><a href="orders.html" class="active">Orders</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="index.html">Website</a></li>
+    </ul>
+</nav>
+
+<div class="container">
+
+    <h1>📦 Orders</h1>
+
+    <table id="ordersTable">
+        <thead>
+            <tr>
+                <th>Invoice</th>
+                <th>Date</th>
+                <th>Total</th>
+                <th>Payment</th>
+            </tr>
+        </thead>
+
+        <tbody id="ordersBody">
+        </tbody>
+    </table>
+
+</div>
+
+<script src="admin.js"></script>
+
+</body>
+</html>

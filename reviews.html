@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Reviews - Banana Bliss</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>⭐ Customer Reviews</h1>
+</header>
+
+<div class="rating-summary">
+    <h2>⭐⭐⭐⭐⭐ <span id="averageRating">0.0</span> / 5</h2>
+    <p>Based on <span id="totalReviews">0</span> Reviews</p>
+</div>
+
+<div class="reviews-container">
+    <h2>What Our Customers Say</h2>
+
+    <div id="reviewsList">
+        <!-- Reviews will appear here -->
+    </div>
+</div>
+<div class="review-form">
+
+    <h2>Write a Review</h2>
+
+    <input type="text" id="reviewName" placeholder="Your Name">
+
+    <select id="reviewRating">
+        <option value="">Select Rating</option>
+        <option value="5">⭐⭐⭐⭐⭐ (5)</option>
+        <option value="4">⭐⭐⭐⭐ (4)</option>
+        <option value="3">⭐⭐⭐ (3)</option>
+        <option value="2">⭐⭐ (2)</option>
+        <option value="1">⭐ (1)</option>
+    </select>
+
+    <textarea
+        id="reviewMessage"
+        placeholder="Write your review..."
+    ></textarea>
+
+    <button onclick="submitReview()">Submit Review</button>
+
+</div>
+
+<hr>
+
+<div id="reviewsList"></div>
+
+
+<script src="reviews.js"></script>
+
+</body>
+</html>
