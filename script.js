@@ -6,7 +6,7 @@
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
 let total = 0;
 let customerLocation = "";
-
+   
 // =========================
 // ADD TO CART
 // =========================
