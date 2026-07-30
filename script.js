@@ -593,14 +593,11 @@ function downloadInvoice() {
 
     const doc = new jsPDF();
     // Load Banana Bliss Logo
-const logo = new Image();
+   const logo = new Image();
 logo.src = "images/logo.png";
 
     // Yellow Header
-    doc.setFillColor(247,198,0);
-    doc.rect(0,0,210,35,"F");
-    doc.setDrawColor(180);
-doc.line(0, 35, 210, 35);
+
     // Add Banana Bliss Logo
 doc.addImage(logo, "PNG", 8, 4, 30, 30);
 
@@ -807,8 +804,9 @@ doc.text("Fresh • Homemade • Premium Quality", 55, footerY + 17);
 // Contact
 doc.text("Phone: +91 9741432959", 15, footerY + 24);
 
-doc.save("BananaBliss-Invoice.pdf");
-}
+setTimeout(() => {
+    doc.save("BananaBliss-Invoice.pdf");
+}, 300);
 
 
 
